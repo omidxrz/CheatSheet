@@ -28,3 +28,7 @@ shodan parse out.txt.json.gz --fields ip_str,port --separator : http.favicon.has
 ```
 grep -v "$varName" config.txt > $$ && mv $$ config.txt
 ```
+### Find Origin IP
+```
+for ip in $(cat cidr.txt);do echo $ip &&  ffuf -w ./subdomains.txt -u http://$ip -H "Host: FUZZ" -s -mc 200; done
+```
