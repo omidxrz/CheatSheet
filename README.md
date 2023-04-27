@@ -36,7 +36,45 @@ for ip in $(cat cidr.txt);do echo $ip &&  ffuf -w ./subdomains.txt -u http://$ip
 ```
 ffuf -w ~/WordList/mylist/combo.txt -u https://staging.walmartvriddhi.org/wp-content/uploads/2022/07/Mask-Group-15.png -H "Authorization: Basic FUZZ" -fc 401
 ```
-** Bash for make Combo List **
+#### Bash for make Combo List
 ```
 for user in $(cat ~/WordList/mylist/user.txt);do for pass in $(cat ~/WordList/mylist/password.txt); do echo -n "$user:$pass" | base64; done; done > combo.txt
+```
+#### Tools Install
+```
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt install golang-go
+pip3 install dnsgen
+go install github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
+go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+go install github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest
+go install github.com/projectdiscovery/notify/cmd/notify@latest
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install github.com/nscuro/fdnssearch/cmd/fdnssearch@latest
+go install github.com/hakluke/hakrevdns@latest
+go install github.com/tomnomnom/assetfinder@latest
+go install github.com/bp0lr/gauplus@latest
+go install github.com/nscuro/fdnssearch/cmd/fdnssearch@latest
+go install github.com/tomnomnom/unfurl@latest
+go install github.com/d3mondev/puredns/v2@latest
+go install github.com/tomnomnom/waybackurls@latest
+go install github.com/jaeles-project/gospider@latest
+go install github.com/Josue87/gotator@latest
+go install github.com/tomnomnom/gf@latest
+go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+go install github.com/tomnomnom/meg@latest
+go install github.com/ffuf/ffuf@latest
+go install github.com/OWASP/Amass/v3/...@master
+go install github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
+go install github.com/KathanP19/Gxss@latest
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+go install github.com/hahwul/dalfox/v2@latest
+go install github.com/Emoe/kxss@latest
+go install github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
+go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
+export PATH="$PATH:/root/go/bin"
+
 ```
