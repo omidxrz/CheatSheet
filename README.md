@@ -76,5 +76,13 @@ go install github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
 go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
 export PATH="$PATH:/root/go/bin"
+--------------
+# Massdns
+git clone https://github.com/blechschmidt/massdns.git
+cd massdns
+make
+sudo make install
+--------------
+apt install vim curl git net-tools tmux build-essential python3 libssl-dev golang-go apache2 python3-certbot-apache nmap dnsutils jq libpcap-dev software-properties-common
 
 ```
