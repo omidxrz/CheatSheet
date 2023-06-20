@@ -43,18 +43,17 @@ for user in $(cat ~/WordList/mylist/user.txt);do for pass in $(cat ~/WordList/my
 #### Tools Install
 ```
 apt install vim curl git net-tools tmux build-essential python3 libssl-dev apache2 python3-certbot-apache nmap dnsutils jq libpcap-dev software-properties-common dnsrecon whois python3-pip
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/blechschmidt/massdns.git; cd massdns; make; sudo make install
 
 pip3 install dnsgen
-go install -v github.com/tomnomnom/anew@latest
-go install -v github.com/owasp-amass/amass/v3/...@master
-go install -v github.com/kankburhan/dofind/cmd/dofind@latest
+go install github.com/tomnomnom/anew@latest
+go install github.com/owasp-amass/amass/v3/...@master
+go install github.com/kankburhan/dofind/cmd/dofind@latest
 go install github.com/projectdiscovery/pdtm/cmd/pdtm@latest
-go install -v github.com/kankburhan/dofind/cmd/dofind@latest
-go install github.com/ffuf/ffuf@latest
+go install github.com/kankburhan/dofind/cmd/dofind@latest
 go install github.com/tomnomnom/assetfinder@latest
 go install github.com/KathanP19/Gxss@latest
-go install github.com/sw33tLie/sns@latest
 go install github.com/sw33tLie/sns@latest
 go install github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
 go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
