@@ -44,13 +44,4 @@ go install github.com/Emoe/kxss@latest
 go install github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
 go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
-export PATH="$PATH:/root/go/bin"
---------------
-# Massdns
-git clone https://github.com/blechschmidt/massdns.git
-cd massdns
-make
-sudo make install
---------------
-
 ```
