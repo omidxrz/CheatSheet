@@ -6,6 +6,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/blechschmidt/massdns.git; cd massdns; make; sudo make install
 
 pip3 install dnsgen
+curl https://sh.rustup.rs -sSf | sh
+cargo install x8
+
 go install github.com/tomnomnom/anew@latest
 go install github.com/owasp-amass/amass/v3/...@master
 go install github.com/kankburhan/dofind/cmd/dofind@latest
