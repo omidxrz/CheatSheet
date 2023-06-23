@@ -2,6 +2,7 @@ q
 # Install
 ```
 apt install vim curl git net-tools tmux build-essential python3 libssl-dev apache2 python3-certbot-apache nmap dnsutils jq libpcap-dev software-properties-common dnsrecon whois python3-pip
+sudo apt install postgresql postgresql-contrib
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/blechschmidt/massdns.git; cd massdns; make; sudo make install
 
