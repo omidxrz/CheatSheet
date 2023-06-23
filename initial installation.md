@@ -1,4 +1,4 @@
-
+q
 # Install
 ```
 apt install vim curl git net-tools tmux build-essential python3 libssl-dev apache2 python3-certbot-apache nmap dnsutils jq libpcap-dev software-properties-common dnsrecon whois python3-pip
@@ -9,6 +9,7 @@ pip3 install dnsgen
 curl https://sh.rustup.rs -sSf | sh
 cargo install x8
 
+go install github.com/projectdiscovery/alterx/cmd/alterx@latest
 go install github.com/tomnomnom/anew@latest
 go install github.com/owasp-amass/amass/v3/...@master
 go install github.com/kankburhan/dofind/cmd/dofind@latest
