@@ -10,6 +10,14 @@ pip3 install dnsgen
 curl https://sh.rustup.rs -sSf | sh
 cargo install x8
 
+Install Gau :
+go install github.com/lc/gau/v2/cmd/gau@latest
+vim ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+# alias gau='git add --update'
+
+curl -L https://sourcegraph.com/.api/src-cli/src_linux_amd64 -o /usr/local/bin/src
+chmod +x /usr/local/bin/src
+
 go install github.com/projectdiscovery/alterx/cmd/alterx@latest
 go install github.com/tomnomnom/anew@latest
 go install github.com/owasp-amass/amass/v3/...@master
